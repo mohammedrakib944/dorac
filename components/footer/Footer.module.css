@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  padding: 50px;
+  margin-top: 100px;
+  text-align: center;
+  color: var(--fontDeep);
+}
+.FooterLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.FooterLogo > span {
+  font-size: 1.4rem;
+  color: var(--fontColor);
+  font-weight: 600;
+  margin-left: 10px;
+}

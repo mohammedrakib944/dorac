@@ -1,0 +1,17 @@
+.navWrapper {
+  padding: 20px 0px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--fontColor);
+}
+.logo > h3 {
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+.navRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
