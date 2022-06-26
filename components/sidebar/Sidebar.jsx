@@ -38,7 +38,7 @@ const Sidebar = ({ title, btnTxt, data }) => {
         {data.map((val) => (
           <div key={val.id} className={styles.sidebarCard}>
             <div className={styles.cardImage}>
-              <Image src={val.img} />
+              <Image src={val.img} alt="Image" />
             </div>
             <div className={styles.cardText}>
               <h5>{val.title}</h5>

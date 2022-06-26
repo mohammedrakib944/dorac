@@ -10,15 +10,15 @@ const Card = ({ data }) => {
   return (
     <div className={`card ${styles.myCard}`}>
       <div className={styles.image}>
-        <Image src={bannerImg} />
+        <Image src={bannerImg} alt="Image" />
       </div>
       <div className="card-body">
         <div className={styles.customCB}>
           <div className={styles.cardHeader}>
             <div className={styles.headerImages}>
-              <Image src={img_1} />
-              <Image src={img_2} />
-              <Image src={img_3} />
+              <Image src={img_1} alt="Image" />
+              <Image src={img_2} alt="Image" />
+              <Image src={img_3} alt="Image" />
               <span>{title}</span>
             </div>
             <span>

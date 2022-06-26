@@ -6,10 +6,10 @@ const Card1 = ({ data }) => {
   return (
     <div className={styles.card1}>
       <span className={styles.bgImg}>
-        <Image src={data.bg} />
+        <Image src={data.bg} alt="Image" />
       </span>
       <span className={styles.personImg}>
-        <Image src={data.person} />
+        <Image src={data.person} alt="Image" />
       </span>
       <div className={styles.Cardfooter}>
         <h5>{data.title}</h5>
