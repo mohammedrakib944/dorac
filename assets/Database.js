@@ -86,6 +86,7 @@ export const topCollections = [
 export const cardData = [
   {
     id: 1,
+    catagory: "video",
     bannerImg: img3,
     img_1: img1,
     img_2: img2,
@@ -97,6 +98,7 @@ export const cardData = [
   },
   {
     id: 2,
+    catagory: "music",
     bannerImg: tala2,
     img_1: img1,
     img_2: img2,
@@ -108,6 +110,7 @@ export const cardData = [
   },
   {
     id: 3,
+    catagory: "art",
     bannerImg: img1,
     img_1: img1,
     img_2: img2,
@@ -119,7 +122,32 @@ export const cardData = [
   },
   {
     id: 4,
+    catagory: "music",
     bannerImg: img2,
+    img_1: img1,
+    img_2: img2,
+    img_3: img3,
+    like_count: 10,
+    title: "Card Title",
+    text: "Some quick example text to build on the card",
+    eth: 9.81,
+  },
+  {
+    id: 5,
+    catagory: "art",
+    bannerImg: img2,
+    img_1: img1,
+    img_2: img2,
+    img_3: img3,
+    like_count: 10,
+    title: "Card Title",
+    text: "Some quick example text to build on the card",
+    eth: 9.81,
+  },
+  {
+    id: 5,
+    catagory: "video",
+    bannerImg: img1,
     img_1: img1,
     img_2: img2,
     img_3: img3,

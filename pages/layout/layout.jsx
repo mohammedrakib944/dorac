@@ -1,12 +1,12 @@
 import Navigation from "../../components/Nav/Navigation";
 import Footer from "../../components/footer/Footer";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, home }) => {
   return (
     <>
       <Navigation />
       <div className="container">{children}</div>
-      <Footer />
+      {home ? " " : <Footer />}
     </>
   );
 };

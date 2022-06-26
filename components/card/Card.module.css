@@ -72,3 +72,9 @@
 .cardFooter > button:hover {
   color: var(--fontColor);
 }
+@media (max-width: 768px) {
+  .myCard {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}

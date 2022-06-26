@@ -6,6 +6,7 @@ import {
   Telephone,
   ChatSquare,
   BrightnessHigh,
+  List,
 } from "react-bootstrap-icons";
 import Image from "next/image";
 

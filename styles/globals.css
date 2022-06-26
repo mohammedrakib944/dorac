@@ -54,3 +54,7 @@ button.btn.btn-info.dropdown-toggle {
 .button:hover {
   background: var(--bg2);
 }
+.activeFilter {
+  background: rgba(0, 183, 255, 0.178) !important;
+  color: var(--blue) !important;
+}
