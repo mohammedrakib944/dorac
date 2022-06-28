@@ -3,7 +3,7 @@
   --bg: #1a1a1b;
   --bg2: #292933;
   --bg3: #212e48;
-  --blue: rgb(6, 201, 250);
+  --blue: rgb(9 149 185);
   --fontColor: rgb(238, 238, 238);
   --fontColor2: #bdbdbd;
   --fontDeep: #7e7c7c;
@@ -51,9 +51,26 @@ button.btn.btn-info.dropdown-toggle {
   margin-top: 5px;
   transition: 0.3s;
 }
+.button a {
+  color: var(--fontColor);
+  text-decoration: none;
+}
+.button a:hover {
+  color: var(--fontColor);
+}
 .button:hover {
   background: var(--bg2);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0 !important;
+}
+
 .activeFilter {
   background: rgba(0, 183, 255, 0.178) !important;
   color: var(--blue) !important;

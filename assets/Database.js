@@ -95,6 +95,7 @@ export const cardData = [
     title: "Card Title",
     text: "Some quick example text to build on the card",
     eth: 9.81,
+    link: "/details",
   },
   {
     id: 2,
@@ -107,6 +108,7 @@ export const cardData = [
     title: "Card Title",
     text: "Some quick example text to build on the card",
     eth: 9.81,
+    link: "/details",
   },
   {
     id: 3,
@@ -119,6 +121,7 @@ export const cardData = [
     title: "Card Title",
     text: "Some quick example text to build on the card",
     eth: 9.81,
+    link: "/details",
   },
   {
     id: 4,
@@ -131,6 +134,7 @@ export const cardData = [
     title: "Card Title",
     text: "Some quick example text to build on the card",
     eth: 9.81,
+    link: "/details",
   },
   {
     id: 5,
@@ -143,6 +147,7 @@ export const cardData = [
     title: "Card Title",
     text: "Some quick example text to build on the card",
     eth: 9.81,
+    link: "/details",
   },
   {
     id: 5,
@@ -155,5 +160,6 @@ export const cardData = [
     title: "Card Title",
     text: "Some quick example text to build on the card",
     eth: 9.81,
+    link: "/details",
   },
 ];

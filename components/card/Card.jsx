@@ -1,12 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Heart } from "react-bootstrap-icons";
 // internal imports
 import styles from "./Card.module.css";
-import image from "../../assets/img/banner.png";
-import lock from "../../assets/img/tala.png";
 
 const Card = ({ data }) => {
-  const { bannerImg, img_1, img_2, img_3, like_count, title, text, eth } = data;
+  const { bannerImg, img_1, img_2, img_3, like_count, title, text, eth, link } =
+    data;
   return (
     <div className={`card ${styles.myCard}`}>
       <div className={styles.image}>
@@ -32,7 +32,9 @@ const Card = ({ data }) => {
       <div className="card-footer">
         <div className={styles.cardFooter}>
           <h5>{eth} ETH</h5>
-          <button className="button">Buy Now</button>
+          <button className="button">
+            <Link href={link}>Buy Now</Link>
+          </button>
         </div>
       </div>
     </div>

@@ -6,9 +6,9 @@ import {
   Telephone,
   ChatSquare,
   BrightnessHigh,
-  List,
 } from "react-bootstrap-icons";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navigation = () => {
   return (
@@ -16,10 +16,12 @@ const Navigation = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-3">
-            <div className={styles.logo}>
-              <Image src={Logo} alt="" />
-              <h3>LOGO HERE</h3>
-            </div>
+            <Link href="/">
+              <div className={styles.logo}>
+                <Image src={Logo} alt="" />
+                <h3>LOGO HERE</h3>
+              </div>
+            </Link>
           </div>
           <div className="col-md-3">
             <div className="input-group mb-3">

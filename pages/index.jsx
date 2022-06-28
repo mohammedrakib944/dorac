@@ -5,7 +5,7 @@ import { useState } from "react";
 
 // internal imports
 import styles from "../styles/Home.module.css";
-import Layout from "./layout/layout";
+import Layout from "../components/layout/layout";
 import Sidebar from "../components/sidebar/Sidebar";
 import { ArrowRight } from "react-bootstrap-icons";
 import { sidebarData, topCollections, cardData } from "../assets/Database";
@@ -48,7 +48,7 @@ export default function Home() {
               </h2>
               <div className="row">
                 {topCollections.map((data) => (
-                  <div key={data.id} className="col-md-3">
+                  <div key={data.id} className="col-md-3 col-sm-6">
                     <Card1 data={data} />
                   </div>
                 ))}
@@ -94,7 +94,7 @@ export default function Home() {
                       : val.catagory === filtering
                   )
                   .map((data) => (
-                    <div key={data.id} className="col-md-3">
+                    <div key={data.id} className="col-md-3 col-sm-6">
                       <Card data={data} />
                     </div>
                   ))}
