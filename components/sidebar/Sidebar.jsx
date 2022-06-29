@@ -1,5 +1,6 @@
 import styles from "./Sidebar.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const Sidebar = ({ title, btnTxt, data }) => {
   return (
@@ -44,9 +45,14 @@ const Sidebar = ({ title, btnTxt, data }) => {
               <h5>{val.title}</h5>
               <p>{val.text}</p>
               {title === "Notifications" && <p>{val.date}</p>}
-              <button className="button">
-                {title === "Notifications" ? "Checkout" : "Follow"}
-              </button>
+
+              {title === "Notifications" ? (
+                <button className="button">Checkout</button>
+              ) : (
+                <Link href={"/profile/" + val.id}>
+                  <button className="button">Profile</button>
+                </Link>
+              )}
             </div>
           </div>
         ))}

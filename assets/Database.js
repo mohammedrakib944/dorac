@@ -5,6 +5,7 @@ import banner from "./img/banner.png";
 import img1 from "./img/img1.png";
 import img2 from "./img/img2.png";
 import img3 from "./img/img3.png";
+import artist from "./img/girl.png";
 
 export const sidebarData = [
   {
@@ -47,6 +48,44 @@ export const sidebarData = [
     id: 6,
     img: tala,
     title: "6 Lorem ipsum dolor sit amet.",
+    text: "Had been sold by 1231 ETH",
+    date: "12 Julay 10:13 PM",
+  },
+];
+
+export const topArtists = [
+  {
+    id: 1,
+    img: artist,
+    title: "Artist Name. 1",
+    text: "Had been sold by 1231 ETH",
+    date: "12 Julay 10:13 PM",
+  },
+  {
+    id: 2,
+    img: artist,
+    title: "Artist Name. 2",
+    text: "Had been sold by 1231 ETH",
+    date: "12 Julay 10:13 PM",
+  },
+  {
+    id: 3,
+    img: artist,
+    title: "Artist Name. 3",
+    text: "Had been sold by 1231 ETH",
+    date: "12 Julay 10:13 PM",
+  },
+  {
+    id: 4,
+    img: artist,
+    title: "Artist Name. 4",
+    text: "Had been sold by 1231 ETH",
+    date: "12 Julay 10:13 PM",
+  },
+  {
+    id: 5,
+    img: artist,
+    title: "Artist Name. 5",
     text: "Had been sold by 1231 ETH",
     date: "12 Julay 10:13 PM",
   },
@@ -95,7 +134,7 @@ export const cardData = [
     title: "Card Title",
     text: "Some quick example text to build on the card",
     eth: 9.81,
-    link: "/details",
+    link: "details",
   },
   {
     id: 2,
@@ -108,7 +147,7 @@ export const cardData = [
     title: "Card Title",
     text: "Some quick example text to build on the card",
     eth: 9.81,
-    link: "/details",
+    link: "details",
   },
   {
     id: 3,
@@ -121,7 +160,7 @@ export const cardData = [
     title: "Card Title",
     text: "Some quick example text to build on the card",
     eth: 9.81,
-    link: "/details",
+    link: "details",
   },
   {
     id: 4,
@@ -134,7 +173,7 @@ export const cardData = [
     title: "Card Title",
     text: "Some quick example text to build on the card",
     eth: 9.81,
-    link: "/details",
+    link: "details",
   },
   {
     id: 5,
@@ -147,7 +186,7 @@ export const cardData = [
     title: "Card Title",
     text: "Some quick example text to build on the card",
     eth: 9.81,
-    link: "/details",
+    link: "details",
   },
   {
     id: 5,
@@ -160,6 +199,6 @@ export const cardData = [
     title: "Card Title",
     text: "Some quick example text to build on the card",
     eth: 9.81,
-    link: "/details",
+    link: "details",
   },
 ];

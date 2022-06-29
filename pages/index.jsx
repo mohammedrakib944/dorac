@@ -8,7 +8,12 @@ import styles from "../styles/Home.module.css";
 import Layout from "../components/layout/layout";
 import Sidebar from "../components/sidebar/Sidebar";
 import { ArrowRight } from "react-bootstrap-icons";
-import { sidebarData, topCollections, cardData } from "../assets/Database";
+import {
+  sidebarData,
+  topCollections,
+  cardData,
+  topArtists,
+} from "../assets/Database";
 import Card1 from "../components/card1/Card1";
 import Card from "../components/card/Card";
 import Footer from "../components/footer/Footer";
@@ -62,25 +67,25 @@ export default function Home() {
                 <ul className={styles.titleFilters}>
                   <li
                     onClick={() => setFiltering("all")}
-                    className={filtering == "all" && "activeFilter"}
+                    className={filtering === "all" && "activeFilter"}
                   >
                     All
                   </li>
                   <li
                     onClick={() => setFiltering("art")}
-                    className={filtering == "art" && "activeFilter"}
+                    className={filtering === "art" && "activeFilter"}
                   >
                     Art
                   </li>
                   <li
                     onClick={() => setFiltering("music")}
-                    className={filtering == "music" && "activeFilter"}
+                    className={filtering === "music" && "activeFilter"}
                   >
                     Music
                   </li>
                   <li
                     onClick={() => setFiltering("video")}
-                    className={filtering == "video" && "activeFilter"}
+                    className={filtering === "video" && "activeFilter"}
                   >
                     Video
                   </li>
@@ -93,8 +98,8 @@ export default function Home() {
                       ? val.catagory !== filtering
                       : val.catagory === filtering
                   )
-                  .map((data) => (
-                    <div key={data.id} className="col-md-3 col-sm-6">
+                  .map((data, index) => (
+                    <div key={index} className="col-md-3 col-sm-6">
                       <Card data={data} />
                     </div>
                   ))}
@@ -107,7 +112,7 @@ export default function Home() {
         <div className={styles.rightSection}>
           <Sidebar title="Notifications" btnTxt="Newest" data={sidebarData} />
           <br />
-          <Sidebar title="Top Artists" btnTxt="Today" data={sidebarData} />
+          <Sidebar title="Top Artists" btnTxt="Today" data={topArtists} />
         </div>
         <Footer />
       </div>

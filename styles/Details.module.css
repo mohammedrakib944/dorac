@@ -92,3 +92,14 @@
 .catCard > h6 {
   color: var(--fontColor);
 }
+@media (max-width: 768px) {
+  .categoryWrapper {
+    flex-direction: column;
+  }
+  .detailsHeading > h2 {
+    font-size: 18px;
+  }
+  .rightDetails {
+    padding-right: 25px;
+  }
+}

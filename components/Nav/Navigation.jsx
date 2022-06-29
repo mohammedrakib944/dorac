@@ -41,7 +41,7 @@ const Navigation = () => {
               <Button text={<Telephone />} />
               <Button text={<ChatSquare />} />
               <Button text="Create" />
-              <Button text="Wallet Connect" />
+              <Button text="Connect" />
               <Button text={<BrightnessHigh />} />
             </div>
           </div>

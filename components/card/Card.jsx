@@ -33,7 +33,7 @@ const Card = ({ data }) => {
         <div className={styles.cardFooter}>
           <h5>{eth} ETH</h5>
           <button className="button">
-            <Link href={link}>Buy Now</Link>
+            <Link href={"/" + link}>Buy Now</Link>
           </button>
         </div>
       </div>
