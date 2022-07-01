@@ -6,22 +6,31 @@ import {
   Telephone,
   ChatSquare,
   BrightnessHigh,
+  List,
 } from "react-bootstrap-icons";
 import Image from "next/image";
 import Link from "next/link";
+import { grabLeftSidebar } from "../leftSidebar/Leftsidebar";
 
 const Navigation = () => {
+  const showNav = () => {
+    grabLeftSidebar();
+  };
+
   return (
     <div className={styles.navWrapper}>
       <div className="container">
         <div className="row">
           <div className="col-md-3">
-            <Link href="/">
-              <div className={styles.logo}>
-                <Image src={Logo} alt="" />
-                <h3>LOGO HERE</h3>
-              </div>
-            </Link>
+            <div className={styles.logoSection}>
+              <Link href="/">
+                <div className={styles.logo}>
+                  <Image src={Logo} alt="" />
+                  <h3>LOGO HERE</h3>
+                </div>
+              </Link>
+              <Button text={<List />} onClick={() => showNav()} />
+            </div>
           </div>
           <div className="col-md-3">
             <div className="input-group mb-3">

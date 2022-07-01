@@ -20,7 +20,9 @@ body {
   background-color: var(--bg) !important;
   color: var(--fontColor);
 }
-
+.showBar {
+  display: block !important;
+}
 .form-control {
   color: var(--fontColor) !important;
   background-color: var(--bg2) !important;
