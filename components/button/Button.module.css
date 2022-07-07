@@ -2,11 +2,11 @@
   margin: 0 3px;
   padding: 8px 15px;
   border-radius: 5px;
-  background-color: var(--bg3);
-  border: none;
+  background: none;
+  border: 1px solid var(--green);
   font-size: 16px;
   font-weight: 400;
-  color: var(--fontColor);
+  color: var(--green);
   transition: 0.3s;
 }
 .myBtn:hover {

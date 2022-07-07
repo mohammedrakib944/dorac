@@ -1,13 +1,13 @@
-import Layout from "../../components/layout/layout";
-import styles from "../../styles/Profile.module.css";
-import Banner from "../../assets/img/banner2.png";
-import Man from "../../assets/img/tala2.png";
-import { cardData } from "../../assets/Database";
+import Layout from "../components/layout/layout";
+import styles from "../styles/Profile.module.css";
+import Banner from "../assets/img/banner2.png";
+import Man from "../assets/img/tala2.png";
+import { cardData } from "../assets/Database";
 
 import Image from "next/image";
 import { Twitter, Share, ThreeDots, PencilSquare } from "react-bootstrap-icons";
-import Button from "../../components/button/Button";
-import Card from "../../components/card/Card";
+import Button from "../components/button/Button";
+import Card from "../components/card/Card";
 
 const Profile = () => {
   return (

@@ -4,6 +4,7 @@
   --bg2: #292933;
   --bg3: #212e48;
   --blue: rgb(9 149 185);
+  --green: lightgreen;
   --fontColor: rgb(238, 238, 238);
   --fontColor2: #bdbdbd;
   --fontDeep: #7e7c7c;
@@ -28,10 +29,15 @@ body {
   background-color: var(--bg2) !important;
   border-color: var(--bg3) !important;
 }
+.input-group {
+  border: 1px solid var(--border) !important;
+  border-radius: 30px !important;
+  overflow: hidden !important;
+}
 .input-group-text {
-  background-color: var(--bg3) !important;
-  color: var(--fontColor) !important;
   border: none !important;
+  background: var(--bg) !important;
+  color: var(--fontColor2) !important;
 }
 button.btn.btn-info.dropdown-toggle {
   font-size: 14px !important;
@@ -42,11 +48,32 @@ button.btn.btn-info.dropdown-toggle {
 .row {
   gap: 20px 0;
 }
-
+.GBtn {
+  padding: 7px 25px;
+  border-radius: 35px;
+  background: linear-gradient(45deg, rgb(36, 179, 226), lightgreen);
+  font-weight: 500;
+}
+.GBtn:hover {
+  filter: contrast(2);
+}
+.BBtn {
+  padding: 7px 25px;
+  border-radius: 35px;
+  background: none;
+  color: white;
+  border: 1px solid lightgreen;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.BBtn:hover {
+  background: var(--green);
+  color: black;
+}
 .button {
-  border: 1px solid var(--border);
-  background: var(--bg3);
-  color: var(--fontColor);
+  border: 1px solid var(--green);
+  background: none;
+  color: var(--green);
   padding: 3px 12px;
   border-radius: 3px;
   font-size: 12px;

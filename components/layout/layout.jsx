@@ -6,7 +6,7 @@ const Layout = ({ children, home }) => {
     <>
       <Navigation />
       <div className="container">{children}</div>
-      {home ? " " : <Footer />}
+      <Footer />
     </>
   );
 };

@@ -46,17 +46,16 @@ const Details = () => {
                   <h5>Brodband</h5>
                 </div>
                 <div>
-                  <p>Colecions</p>
-                  <h5>Brodband</h5>
-                </div>
-                <div>
                   <p>Owner</p>
                   <h5>Brodband</h5>
                 </div>
               </div>
 
-              <h4>
-                Price: <span>0.11wETH</span>
+              <h4 className={styles.priceSection}>
+                <h5>Price</h5>
+                <span>
+                  0.11wETH <br /> <p>=$12.234</p>
+                </span>
               </h4>
 
               <button className={styles.buyNowBtn}>Buy Now</button>

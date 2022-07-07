@@ -51,13 +51,32 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 50px;
-  margin-bottom: 70px;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.dtNames > div,
+.priceSection {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: rgba(221, 221, 221, 0.274);
 }
 .dtNames > div > h5 {
   font-size: 18px;
   color: var(--fontColor);
   margin-top: 7px;
+}
+.priceSection {
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.priceSection span {
+  color: var(--fontColor) !important;
+}
+.priceSection span p {
+  font-size: 14px;
 }
 .buyNowBtn {
   width: 100%;
