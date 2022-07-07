@@ -90,6 +90,9 @@
   .titleWrapper {
     flex-direction: column;
   }
+  .hero h1 {
+    font-size: 3rem;
+  }
   .rightSection {
     width: 84%;
     margin: 0 auto;

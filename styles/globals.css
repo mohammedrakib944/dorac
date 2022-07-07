@@ -53,6 +53,7 @@ button.btn.btn-info.dropdown-toggle {
   border-radius: 35px;
   background: linear-gradient(45deg, rgb(36, 179, 226), lightgreen);
   font-weight: 500;
+  border: none;
 }
 .GBtn:hover {
   filter: contrast(2);
