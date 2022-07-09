@@ -52,7 +52,7 @@ const Details = () => {
               </div>
 
               <h4 className={styles.priceSection}>
-                <h5>Price</h5>
+                <p>Price</p>
                 <span>
                   0.11wETH <br /> <p>=$12.234</p>
                 </span>

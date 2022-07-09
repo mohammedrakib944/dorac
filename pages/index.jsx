@@ -21,15 +21,12 @@ import Footer from "../components/footer/Footer";
 
 export default function Home() {
   const [filtering, setFiltering] = useState("all");
+
   return (
     <>
       <Head>
         <title>Home</title>
       </Head>
-
-      {/* <div className="col-md-2">
-            <Leftsidebar />
-          </div> */}
 
       <Layout home>
         <div className={styles.Home}>

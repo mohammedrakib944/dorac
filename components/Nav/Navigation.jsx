@@ -1,13 +1,21 @@
 import styles from "./Navigation.module.css";
 import Logo from "../../assets/img/logo.png";
-import { Search, Bell, BrightnessHigh } from "react-bootstrap-icons";
+import { Search, Bell, BrightnessHigh, Moon } from "react-bootstrap-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { grabLeftSidebar } from "../leftSidebar/Leftsidebar";
 
+import { useState } from "react";
+
 const Navigation = () => {
+  const [themeIcon, setThemeIcon] = useState("dark");
   const showNav = () => {
     grabLeftSidebar();
+  };
+
+  const changeTheme = () => {
+    document.body.classList.toggle("lightTheme");
+    setThemeIcon(themeIcon === "dark" ? "" : "dark");
   };
 
   return (
@@ -56,8 +64,8 @@ const Navigation = () => {
               <button className={styles.btnSame}>
                 <Bell />
               </button>
-              <button className={styles.btnSame}>
-                <BrightnessHigh />
+              <button className={styles.btnSame} onClick={() => changeTheme()}>
+                {themeIcon === "dark" ? <BrightnessHigh /> : <Moon />}
               </button>
             </div>
           </div>

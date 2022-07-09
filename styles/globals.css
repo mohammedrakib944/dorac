@@ -3,13 +3,25 @@
   --bg: #1a1a1b;
   --bg2: #292933;
   --bg3: #212e48;
-  --blue: rgb(9 149 185);
+  --blue: rgb(56 138 203);
   --green: lightgreen;
   --fontColor: rgb(238, 238, 238);
   --fontColor2: #bdbdbd;
   --fontDeep: #7e7c7c;
   --border: rgba(255, 255, 255, 0.164);
 }
+.lightTheme {
+  --bg: #ffffff;
+  --bg2: #b1b1b100;
+  --bg3: #cdcdcd;
+  --blue: rgb(56 138 203);
+  --green: #83ff88;
+  --fontColor: rgb(30 30 30);
+  --fontColor2: #242323;
+  --fontDeep: #5c5c5c;
+  --border: rgb(96 96 96 / 27%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +37,7 @@ body {
   display: block !important;
 }
 .form-control {
+  border: none !important;
   color: var(--fontColor) !important;
   background-color: var(--bg2) !important;
   border-color: var(--bg3) !important;
@@ -62,7 +75,7 @@ button.btn.btn-info.dropdown-toggle {
   padding: 7px 25px;
   border-radius: 35px;
   background: none;
-  color: white;
+  color: var(--fontColor);
   border: 1px solid lightgreen;
   font-weight: 500;
   transition: 0.3s;
@@ -72,9 +85,9 @@ button.btn.btn-info.dropdown-toggle {
   color: black;
 }
 .button {
-  border: 1px solid var(--green);
+  border: 1px solid var(--fontColor);
   background: none;
-  color: var(--green);
+  color: var(--fontColor);
   padding: 3px 12px;
   border-radius: 3px;
   font-size: 12px;
@@ -82,14 +95,15 @@ button.btn.btn-info.dropdown-toggle {
   transition: 0.3s;
 }
 .button a {
-  color: var(--fontColor);
+  color: white;
   text-decoration: none;
 }
 .button a:hover {
-  color: var(--fontColor);
+  background: var(--blue);
+  color: white;
 }
 .button:hover {
-  background: var(--bg2);
+  background: var(--blue);
 }
 h1,
 h2,
