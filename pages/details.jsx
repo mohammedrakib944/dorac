@@ -2,6 +2,7 @@ import Layout from "../components/layout/layout";
 import styles from "../styles/Details.module.css";
 // import image from "../assets/img/banner.png";
 import image from "../assets/img/tala2.png";
+import profile from "../assets/img/crypto.png";
 import Card from "../components/card/Card";
 import { cardData } from "../assets/Database";
 
@@ -14,7 +15,7 @@ const Details = () => {
   return (
     <Layout>
       <div className={styles.detailsHeading}>
-        <h2>Product Details</h2>
+        <h2>Details</h2>
         <p>
           <span>Home</span> <ChevronRight /> Product Details
         </p>
@@ -41,15 +42,31 @@ const Details = () => {
               <h4>#22Lorem, Ipsum dolor</h4>
 
               <div className={styles.dtNames}>
-                <div>
-                  <p>Category 10% roylities</p>
-                  <h5>Brodband</h5>
+                <div className={styles.df}>
+                  <div className={styles.imageContainer}>
+                    <Image src={profile} alt="" />
+                  </div>
+                  <div>
+                    <p>Category 10% roylities</p>
+                    <h5>Brodband</h5>
+                  </div>
                 </div>
-                <div>
-                  <p>Owner</p>
-                  <h5>Brodband</h5>
+                <div className={styles.df}>
+                  <div className={styles.imageContainer}>
+                    <Image src={profile} alt="" />
+                  </div>
+                  <div>
+                    <p>Owner</p>
+                    <h5>Brodband</h5>
+                  </div>
                 </div>
               </div>
+              <span className={styles.colorF}>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+                blanditiis eveniet optio labore quia. Voluptate mollitia in
+                nulla consequuntur dolores impedit.
+              </span>
+              <br />
 
               <h4 className={styles.priceSection}>
                 <p>Price</p>
@@ -60,57 +77,39 @@ const Details = () => {
 
               <button className={styles.buyNowBtn}>Buy Now</button>
             </div>
+
+            <div className={styles.history}>
+              <div className={styles.buttons}>
+                <button>History</button>
+                <button>Info</button>
+                <button>Provenance</button>
+              </div>
+              <div className={styles.lists}>
+                <div className={styles.list}>
+                  <div className={styles.listLeft}>
+                    <div className={styles.imageContainer}>
+                      <Image src={profile} alt="" />
+                    </div>
+                    <div className={styles.listsItem}>
+                      <h5>Lorem Ipsum</h5>
+                      <p>8 hours ago</p>
+                    </div>
+                  </div>
+                  <div className={styles.listsItem}>
+                    <h5>4.82 ETH</h5>
+                    <p>= $12.342</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <br />
       <br />
-      <h5 className={styles.title}>Category</h5>
-      <div className={styles.categoryWrapper}>
-        <div className={styles.catCard}>
-          <p>ZARY</p>
-          <h6>APP</h6>
-        </div>
-        <div className={styles.catCard}>
-          <p>SOMALIAN</p>
-          <h6>TRIBUTE</h6>
-        </div>
-        <div className={styles.catCard}>
-          <p>TUNA</p>
-          <h6>PIPE</h6>
-        </div>
-      </div>
+      <br />
 
-      <br />
-      <h5 className={styles.title}>Properties</h5>
-      <div className={styles.categoryWrapper}>
-        <div className={styles.catCard}>
-          <p>SOMALIAN</p>
-          <h6>TRIBUTE</h6>
-        </div>
-        <div className={styles.catCard}>
-          <p>SOMALIAN</p>
-          <h6>TRIBUTE</h6>
-        </div>
-        <div className={styles.catCard}>
-          <p>SOMALIAN</p>
-          <h6>TRIBUTE</h6>
-        </div>
-        <div className={styles.catCard}>
-          <p>ZARY</p>
-          <h6>APP</h6>
-        </div>
-        <div className={styles.catCard}>
-          <p>SOMALIAN</p>
-          <h6>TRIBUTE</h6>
-        </div>
-        <div className={styles.catCard}>
-          <p>TUNA</p>
-          <h6>PIPE</h6>
-        </div>
-      </div>
-      <br />
       <h5 className={styles.title}>Related Items</h5>
       <div className="row">
         {cardData.map((data, index) =>
@@ -122,6 +121,11 @@ const Details = () => {
             ""
           )
         )}
+      </div>
+      <br />
+      <br />
+      <div className={styles.wf}>
+        <button className={styles.loadMoreBtn}>Load More</button>
       </div>
     </Layout>
   );

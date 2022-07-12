@@ -18,10 +18,9 @@
 .hero h1 {
   color: var(--fontColor);
   font-weight: 600;
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 .hero h1 {
-  font-size: 5rem;
   width: fit-content;
   background: linear-gradient(45deg, #46a5f9, #ff0057);
   -webkit-text-stroke: 3px transparent;
@@ -87,12 +86,18 @@
   .homeWrapper {
     display: inline-block;
   }
+  .hero {
+    background-position-y: 50px;
+    background-position-x: -118px;
+  }
   .titleWrapper {
     flex-direction: column;
   }
+  .hero h2,
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
+
   .rightSection {
     width: 84%;
     margin: 0 auto;

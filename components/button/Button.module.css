@@ -6,10 +6,10 @@
   border: 1px solid;
   font-size: 16px;
   font-weight: 400;
-  color: var(--fontColor2);
+  color: var(--blue);
   transition: 0.3s;
 }
 .myBtn:hover {
-  color: blue;
+  color: var(--fontColor2);
   background-color: var(--bg2);
 }

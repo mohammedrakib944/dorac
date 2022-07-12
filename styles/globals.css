@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --bg: #1a1a1b;
-  --bg2: #292933;
+  --bg2: #242435;
   --bg3: #212e48;
-  --blue: rgb(56 138 203);
-  --green: lightgreen;
+  --blue: #00a3ff;
+  --green: rgb(86, 226, 86);
   --fontColor: rgb(238, 238, 238);
+  --btnBg: #1b3465;
   --fontColor2: #bdbdbd;
   --fontDeep: #7e7c7c;
   --border: rgba(255, 255, 255, 0.164);
@@ -14,8 +15,9 @@
   --bg: #ffffff;
   --bg2: #b1b1b100;
   --bg3: #cdcdcd;
-  --blue: rgb(56 138 203);
-  --green: #83ff88;
+  --blue: #00a3ff;
+  --green: #21c927;
+  --btnBg: #1b346549;
   --fontColor: rgb(30 30 30);
   --fontColor2: #242323;
   --fontDeep: #5c5c5c;
@@ -36,16 +38,19 @@ body {
 .showBar {
   display: block !important;
 }
+
 .form-control {
   border: none !important;
   color: var(--fontColor) !important;
-  background-color: var(--bg2) !important;
+  background-color: transparent !important;
+  padding: 8px !important;
   border-color: var(--bg3) !important;
 }
 .input-group {
   border: 1px solid var(--border) !important;
-  border-radius: 30px !important;
+  border-radius: 15px !important;
   overflow: hidden !important;
+  width: 350px !important;
 }
 .input-group-text {
   border: none !important;
@@ -59,7 +64,7 @@ button.btn.btn-info.dropdown-toggle {
   background: #0298ed !important;
 }
 .row {
-  gap: 20px 0;
+  gap: 10px 0;
 }
 .GBtn {
   padding: 7px 25px;
@@ -85,8 +90,8 @@ button.btn.btn-info.dropdown-toggle {
   color: black;
 }
 .button {
-  border: 1px solid var(--fontColor);
-  background: none;
+  border: none;
+  background: var(--btnBg);
   color: var(--fontColor);
   padding: 3px 12px;
   border-radius: 3px;
@@ -94,16 +99,8 @@ button.btn.btn-info.dropdown-toggle {
   margin-top: 5px;
   transition: 0.3s;
 }
-.button a {
-  color: white;
-  text-decoration: none;
-}
-.button a:hover {
-  background: var(--blue);
-  color: white;
-}
 .button:hover {
-  background: var(--blue);
+  background: var(--bg3);
 }
 h1,
 h2,
@@ -114,8 +111,25 @@ h6,
 p {
   margin-bottom: 0 !important;
 }
-
+.active {
+  color: var(--green) !important;
+}
 .activeFilter {
   background: rgba(0, 183, 255, 0.178) !important;
   color: var(--blue) !important;
+}
+
+@media (max-width: 767px) {
+  .showNav {
+    display: block !important;
+  }
+  .row {
+    gap: 5px 0;
+  }
+  .hideNav {
+    display: none !important;
+  }
+  .form-control {
+    padding: 5px !important;
+  }
 }

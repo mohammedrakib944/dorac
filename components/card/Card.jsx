@@ -32,9 +32,9 @@ const Card = ({ data }) => {
       <div className="card-footer">
         <div className={styles.cardFooter}>
           <h5>{eth} ETH</h5>
-          <button className="button">
+          <span className={styles.custonBtn}>
             <Link href={"/" + link}>Buy Now</Link>
-          </button>
+          </span>
         </div>
       </div>
     </div>

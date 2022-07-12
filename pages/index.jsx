@@ -64,6 +64,8 @@ export default function Home() {
               ))}
             </div>
           </div>
+
+          <br />
           <br />
 
           <div className={styles.exploreProduct}>
@@ -112,18 +114,6 @@ export default function Home() {
           </div>
         </div>
       </Layout>
-
-      {/* <div className="col-md-2">
-            <div className={styles.rightSection}>
-              <Sidebar
-                title="Notifications"
-                btnTxt="Newest"
-                data={sidebarData}
-              />
-              <br />
-              <Sidebar title="Top Artists" btnTxt="Today" data={topArtists} />
-            </div>
-          </div> */}
 
       {/* Bootstrap CDN */}
       <Script
