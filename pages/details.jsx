@@ -1,17 +1,18 @@
 import Layout from "../components/layout/layout";
 import styles from "../styles/Details.module.css";
-// import image from "../assets/img/banner.png";
 import image from "../assets/img/tala2.png";
 import profile from "../assets/img/crypto.png";
 import Card from "../components/card/Card";
 import { cardData } from "../assets/Database";
 
 // external imports
+import { useState } from "react";
 import { ChevronRight, Heart, ThreeDots } from "react-bootstrap-icons";
 import Image from "next/image";
 import Button from "../components/button/Button";
 
 const Details = () => {
+  const [showItem, setShowItem] = useState("history");
   return (
     <Layout>
       <div className={styles.detailsHeading}>
@@ -80,26 +81,63 @@ const Details = () => {
 
             <div className={styles.history}>
               <div className={styles.buttons}>
-                <button>History</button>
-                <button>Info</button>
-                <button>Provenance</button>
+                <button
+                  onClick={() => setShowItem("history")}
+                  className={showItem === "history" ? "activeitems" : ""}
+                >
+                  History
+                </button>
+                <button
+                  onClick={() => setShowItem("info")}
+                  className={showItem === "info" ? "activeitems" : ""}
+                >
+                  Info
+                </button>
+                <button
+                  onClick={() => setShowItem("prov")}
+                  className={showItem === "prov" ? "activeitems" : ""}
+                >
+                  Provenance
+                </button>
               </div>
+
               <div className={styles.lists}>
-                <div className={styles.list}>
-                  <div className={styles.listLeft}>
-                    <div className={styles.imageContainer}>
-                      <Image src={profile} alt="" />
+                {showItem === "history" && (
+                  <div className={styles.list}>
+                    <div className={styles.listLeft}>
+                      <div className={styles.imageContainer}>
+                        <Image src={profile} alt="" />
+                      </div>
+                      <div className={styles.listsItem}>
+                        <h5>Lorem Ipsum</h5>
+                        <p>8 hours ago</p>
+                      </div>
                     </div>
                     <div className={styles.listsItem}>
-                      <h5>Lorem Ipsum</h5>
-                      <p>8 hours ago</p>
+                      <h5>4.82 ETH</h5>
+                      <p>= $12.342</p>
                     </div>
                   </div>
-                  <div className={styles.listsItem}>
-                    <h5>4.82 ETH</h5>
-                    <p>= $12.342</p>
+                )}
+
+                {showItem === "info" && (
+                  <div className={styles.list}>
+                    <p>
+                      Info Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit
+                      amet consectetur adipisicing elit. Rem voluptatum incidunt
+                      voluptatibus minus in consectetur illo quos aliquam
+                      voluptates animi!
+                    </p>
                   </div>
-                </div>
+                )}
+                {showItem === "prov" && (
+                  <div className={styles.list}>
+                    <p>
+                      Provenance Lorem, ipsum dolor sit amet consectetur
+                      adipisicing elit. Minima, animi.
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
           </div>

@@ -18,7 +18,7 @@ function NavLink({ href, exact, children, ...props }) {
   const isActive = exact ? pathname === href : pathname.startsWith(href);
 
   if (isActive) {
-    props.className += "active";
+    props.className += " active";
   }
 
   return (

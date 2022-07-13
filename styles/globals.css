@@ -64,7 +64,7 @@ button.btn.btn-info.dropdown-toggle {
   background: #0298ed !important;
 }
 .row {
-  gap: 10px 0;
+  gap: 15px 0 !important;
 }
 .GBtn {
   padding: 7px 25px;
@@ -111,8 +111,14 @@ h6,
 p {
   margin-bottom: 0 !important;
 }
-.active {
+.undefinedactive {
   color: var(--green) !important;
+}
+.activeitems {
+  border-bottom: 3px solid transparent !important;
+  margin-bottom: -2px !important;
+  transition: 0.2s !important;
+  border-color: var(--blue) !important;
 }
 .activeFilter {
   background: rgba(0, 183, 255, 0.178) !important;
