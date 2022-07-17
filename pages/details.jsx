@@ -26,7 +26,7 @@ const Details = () => {
         <div className="row">
           <div className="col-md-6">
             <div className={styles.detailsImg}>
-              <Image src={image} />
+              <Image src={image} alt="image" />
             </div>
           </div>
           <div className="col-md-6">
@@ -45,7 +45,7 @@ const Details = () => {
               <div className={styles.dtNames}>
                 <div className={styles.df}>
                   <div className={styles.imageContainer}>
-                    <Image src={profile} alt="" />
+                    <Image src={profile} alt="image" />
                   </div>
                   <div>
                     <p>Category 10% roylities</p>
@@ -54,7 +54,7 @@ const Details = () => {
                 </div>
                 <div className={styles.df}>
                   <div className={styles.imageContainer}>
-                    <Image src={profile} alt="" />
+                    <Image src={profile} alt="image" />
                   </div>
                   <div>
                     <p>Owner</p>
@@ -106,7 +106,7 @@ const Details = () => {
                   <div className={styles.list}>
                     <div className={styles.listLeft}>
                       <div className={styles.imageContainer}>
-                        <Image src={profile} alt="" />
+                        <Image src={profile} alt="image" />
                       </div>
                       <div className={styles.listsItem}>
                         <h5>Lorem Ipsum</h5>

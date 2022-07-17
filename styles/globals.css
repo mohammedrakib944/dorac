@@ -18,8 +18,8 @@
   --blue: #00a3ff;
   --green: #21c927;
   --btnBg: #1b346549;
-  --fontColor: rgb(30 30 30);
-  --fontColor2: #242323;
+  --fontColor: rgb(55 72 82);
+  --fontColor2: #5e646a;
   --fontDeep: #5c5c5c;
   --border: rgb(96 96 96 / 27%);
 }
@@ -111,7 +111,7 @@ h6,
 p {
   margin-bottom: 0 !important;
 }
-.undefinedactive {
+.active {
   color: var(--green) !important;
 }
 .activeitems {
