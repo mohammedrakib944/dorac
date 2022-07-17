@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./Navigation.module.css";
 import Logo from "../../assets/img/logo.png";
 import {
   List,
@@ -7,14 +8,10 @@ import {
   BrightnessHigh,
   Moon,
 } from "react-bootstrap-icons";
-import styles from "./navigation.module.css";
 
 import Image from "next/image";
 import Link from "next/link";
-import { NavLink } from "../Navlink/Navlink";
-/*
-    dependencies: react-bootstrap-icons, react-bootsrap
-*/
+import { NavLink } from "../navlink/Navlink";
 
 const Navigation = () => {
   const [toggleButton, setToggleButton] = useState("");
